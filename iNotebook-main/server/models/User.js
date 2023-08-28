@@ -7,13 +7,13 @@ const UserSchema = new mongoose.Schema({
   },
   email: {
     type: String,
-    required: [true, "Name is Required"],
+    required: [true, "email is Required"],
     unique: true,
   },
   password: {
     type: String,
     minlength: 6,
-    required: [true, "Name is Required"],
+    required: [true, "password is Required"],
   },
   timeStamp: {
     type: Date,
